@@ -1,2 +1,1 @@
-# JAVA-TIL
-# Spring-TIL
+# JAVA SPRING - TIL
