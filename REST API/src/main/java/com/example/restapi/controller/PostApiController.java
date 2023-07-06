@@ -1,7 +1,7 @@
 package com.example.restapi.controller;
 
 import com.example.restapi.model.BookRequest;
-import com.example.restapi.model.UserInfoRequest;
+import com.example.restapi.model.UserRequest;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,10 +21,10 @@ public class PostApiController {
 
     @PostMapping("/userinfo")
     public String userinfo(
-        @RequestBody UserInfoRequest userInfoRequest
+        @RequestBody UserRequest userRequest
     ){
-        System.out.println(userInfoRequest);
-        return userInfoRequest.toString();
+        System.out.println(userRequest);
+        return userRequest.toString();
     }
 
 }

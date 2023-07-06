@@ -10,11 +10,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class UserInfoRequest {
+public class UserRequest {
 
     private String userName;
 
-    private String userPnum;
+    private Integer userAge;
 
     private String userEmail;
 

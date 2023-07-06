@@ -1,7 +1,7 @@
 package com.example.restapi.controller;
 
 
-import com.example.restapi.model.UserInfoRequest;
+import com.example.restapi.model.UserRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,9 +15,9 @@ public class PutApiContorller {
 
     @PutMapping("/put")
     public void put(
-        @RequestBody UserInfoRequest userInfoRequest
+        @RequestBody UserRequest userRequest
     ){
-        log.info("Request : {}", userInfoRequest);
+        log.info("Request : {}", userRequest);
     }
 
 }
