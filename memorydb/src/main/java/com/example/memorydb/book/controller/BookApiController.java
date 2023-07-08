@@ -1,6 +1,6 @@
 package com.example.memorydb.book.controller;
 
-import com.example.memorydb.book.entity.BookEntity;
+import com.example.memorydb.book.db.entity.BookEntity;
 import com.example.memorydb.book.service.BookService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

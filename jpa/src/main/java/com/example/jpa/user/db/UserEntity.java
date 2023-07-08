@@ -1,6 +1,9 @@
-package com.example.memorydb.user.model;
+package com.example.jpa.user.db;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,12 +15,12 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Builder
 @Entity(name = "user")
-public class UserEntity  {
+public class UserEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
-    private int score;
+    private Integer age;
+    private String email;
 }
